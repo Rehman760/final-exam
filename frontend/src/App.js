@@ -7,21 +7,24 @@ import List from './components/List';
 
 const App = () => {
   return (
-    // <Router>
-    //   <div>
-    //     <Routes>
-    //       <Route exact path="/" component={List} />
-    //       <Route exact path="/recipes/add" component={Add} />
-    //       <Route exact path="/recipes/:id" component={View} />
-    //       <Route exact path="/recipes/:id/edit" component={Edit} />
-    //     </Routes>
-    //   </div>
-    // </Router>
+    <Router>
+      <div>
+        <Routes>
+          <Route exact path="/" component={List} />
+          <Route exact path="/recipes/add" component={Add} />
+          <Route exact path="/recipes/:id" component={View} />
+          <Route exact path="/recipes/:id/edit" component={Edit} />
+        </Routes>
+      </div>
+    </Router>
   
-    <div>
-      <List/>
-      <Add/>
-    </div>
+    // <div>
+    //   <h1>Recipe Management system</h1>
+    //   {/* <List/> */}
+    //   {/* <Add/> */}
+    //   {/* <Edit/> */}
+    //   <View/>
+    // </div>
     );
 };
 
